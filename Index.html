@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="Boekenlijst OGD" content="Challenge">
+  <title>Boekenlijst</title>
+  <!-- <link href="css/main.css" rel="stylesheet"> -->
+</head>
+
+<body>
+
+<div class="container">
+    <div class="well"><h1>Boekenlijst met likes</h1>
+        <p>Deze challenge bestaat uit drie onderdelen. <br/><b> (1)</b> Als eerste zorg je ervoor dat het formulier werkt. Hiervoor moet je de Boek constructorfunctie afmaken en 3 functies toevoegen: <b>dislike</b>, <b>like</b> en <b>toString</b>.</p>
+        <p><b>(2)</b> Zorg er nu voor dat de likeBoek en dislikeBoek de like() en dislike() functies aanroepen.</p>
+        <p><b>(3 intro)</b> Daarna werkt het programma, maar dan ben je er nog niet. Elke keer dat je een nieuw boek maakt moet je de titel, de auteur, het aantal pagina's, het aantal auteurs en het aantal likes opgeven. Het aantal auteurs is standaard 1 en het aantal likes is 10. We willen dat niet elke keer opgeven, maar dit alleen doen als de waarde afwijkt van de default. Je kunt de andere variabelen ook defaultwaarden geven, b.v. '' voor de auteur en de titel, 50 voor het aantal pagina's.</p>
+        <p>In plaats van titel, auteur, aantalAuteurs, paginas en likes mee te geven aan een nieuw Boek, kan je een object meegeven met daarin de waarden die afwijken van de defaults?</p>
+        <p>Bijvoorbeeld: var b1 = new Boek({titel: 'javascript', auteur: 'mijn auteur', paginas: 341});<br/>
+            var b2 = new Boek({titel: 'Charlie the Unicorn', auteur: 'een auteur', likes: 342});</p>
+        <p><b>(3 opdracht)</b> Pas je huidige Boek constructor aanpassen zodat je het volgende krijgt:</p>
+        <p><i>function Boek(boekData) {</i></p>
+        <p>Zorg er nu voor dat je code weer goed werkt.</p>
+        <p>Het moet mogelijk zijn voor gebruikers om parameters uit het boekData object weg te laten zoals je hierboven ziet (b1 heeft geen 'likes' en b2 heeft geen 'paginas'). </p>
+    </div>
+
+    <form name="boekenForm" method="POST">
+        <div class="form-group">
+            <label for="kiesBoek">Kies een boek</label>
+            <select name="kiesBoek" id="kiesBoek">
+            </select>
+        </div>
+        <div class="form-group">
+            <button type="button" id="dislike" class="btn btn-sm">Dislike</button> <button type="button" class="btn btn-sm" id="like">Like!</button>
+        </div>
+    </form>
+</div>
+
+  <script type="text/javascript" src="main.js"></script>
+
+</body>
