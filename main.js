@@ -39,7 +39,7 @@ boekenLijst.push(new Boek('ES6 the new thing', 'Pim van der Meer',  2, 332, 539)
 
 
 // Nu wordt, m.b.v. deze boekenlijst een <select> gevuld.
-var kiesBoek = document.getElementById('kiesBoek');
+let kiesBoek = document.getElementById('kiesBoek');
 for (var i=0; i<boekenLijst.length; i++) {
     kiesBoek[kiesBoek.length] = new Option(boekenLijst[i].titel, i);
 }
